@@ -1,0 +1,16 @@
+
+Standalone use
+---------------
+
+for those who has come to this page because the CANalyst-II hardware is unable to work due to driver issues and cannot install the above  Python fix
+i have found the correct solution that do not require any third party driver
+
+note: the CANalyst-II are clones and not an original product from ZLG
+To get the CANalyst-II to work, forget all supplied documentation, do the following
+1) install USB_CAN TOOL - this is the software that works with USB-CAN(U) or USB-CAN(C)
+   this software can work with CANalyst-II off the shelf
+2) install CANTEST and CANPRO, both from ZLG website
+   this software can only work with the original CANalyst-II+ but not with CANalyst-II clones
+3) copy the ControlCAN.DLL from USB_CAN TOOL and overwrite the one in both CANTEST and CANPRO
+   Voila, now both CANTEST and CANPRO can work with the Canalyst-II clones in USNCAN, USBCAN2, USBCAN-E-U and USBCAN-2E-U
+4) you can verify that it is working by the CAN PORT1 & 2 BLUE LED blinked
