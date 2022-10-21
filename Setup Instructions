@@ -7,6 +7,10 @@ i have found the correct solution that do not require any third party driver
 
 note: the CANalyst-II are clones and not an original product from ZLG
 To get the CANalyst-II to work, forget all supplied documentation, do the following
+
+MOST IMPORTANT, MAY HAVE TO DISABLE CERTIFICATE SIGNING IN ORDER FOR THE DRIVER TO BE PROPERLY INSTALLED
+do not skip this step, or else the CANalyst-II hardware will not be detected at all
+
 1) install USB_CAN TOOL - this is the software that works with USB-CAN(U) or USB-CAN(C)
    this software can work with CANalyst-II off the shelf
 2) install CANTEST and CANPRO, both from ZLG website
